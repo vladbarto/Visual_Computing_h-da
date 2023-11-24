@@ -163,6 +163,30 @@ bool Scene::init()
         rightLeg.scale(scaleBone);
         rightLeg.scale(scaleBone);
 
+//        /** Load into Vertex Shader the ViewMatrix */
+//        glm::vec3 upVector = glm::vec3(0.0f, 1.0f, 0.0f);
+//        glm::vec3 cameraPosition(0.0f, 0.0f, 3.0f);
+//        glm::vec3 cameraTarget(0.0f, 2.0f, 0.0f);
+//
+//        glm::mat4 view = glm::lookAt(cameraPosition, cameraTarget, upVector);
+//
+//        m_shader->setUniform("view", view, false);
+//
+//        /** Projection Matrix into Vertex Shader */
+//        int width = 1920;
+//        int height = 1080;
+//        float fov = glm::radians(45.0f);  // Field of view in degrees, convert to radians
+//        float aspectRatio = width / height;  // Adjust the aspect ratio based on your window size
+//        float nearClip = 0.1f;
+//        float farClip = 100.0f;
+//
+//        glm::mat4 projection = glm::perspective(fov, aspectRatio, nearClip, farClip);
+//
+//        // Example of changing FOV dynamically
+//        fov = glm::radians(60.0f);  // Change FOV to 60 degrees
+//        projection = glm::perspective(fov, aspectRatio, nearClip, farClip);
+//        m_shader->setUniform("projection", projection, false);
+
         // Aufgabe 1.4
         glEnable(GL_CULL_FACE);
         glFrontFace(GL_CCW);
@@ -170,8 +194,8 @@ bool Scene::init()
 
         // Aufgabe 2.3.3: Deep Test activation for OpenGL
         glEnable(GL_DEPTH_TEST);
-        glDepthFunc(GL_GREATER);
-        glClearDepth(0.0);
+        glDepthFunc(GL_LESS);
+        glClearDepth(1.0);
         static Transform xyz;
         std::cout << "Scene initialization done\n";
         return true;
@@ -277,9 +301,50 @@ void Scene::render(float dt)
      */
 }
 
+// Global:
+float lookUpDown = 0.0f;  // for y-Axis
+float lookLeftRight = 0.0f;  // for x-Axis
+float moveCameraUpDown = 0.0f; //for y-Axis
+float moveCameraLeftRight = 0.0f; // for x-Axis
+MousePosition mousePosition;
+
 void Scene::update(float dt)
 {
+    /** Projection Matrix into Vertex Shader */
+    int width = 16;
+    int height = 9;
+    float fov = glm::radians(60.0f);  // Field of view in degrees, convert to radians
+    float aspectRatio = width / height;  // Adjust the aspect ratio based on your window size
+    float nearClip = 0.1f;
+    float farClip = 100.0f;
 
+
+    // Tastatureingabe
+    if(m_window->getInput().getKeyState(Key::W) == KeyState::Pressed) {
+        lookUpDown -= 0.1f;
+    }
+    if(m_window->getInput().getKeyState(Key::S) == KeyState::Pressed) {
+        lookUpDown += 0.1f;
+    }
+    if(m_window->getInput().getKeyState(Key::A) == KeyState::Pressed) {
+        lookLeftRight -= 0.1f;
+    }
+    if(m_window->getInput().getKeyState(Key::D) == KeyState::Pressed) {
+        lookLeftRight += 0.1f;
+    }
+
+    // Mauseingabe
+    onMouseMove(mousePosition);
+    std::cout<<"MouseX (new): "<<mousePosition.X<<"\nMouseY (new): "<<mousePosition.Y<<std::endl<<std::endl;
+    glm::vec3 upVector = glm::vec3(0.0f, 1.0f, 0.0f);
+    glm::vec3 cameraPosition(moveCameraLeftRight, moveCameraUpDown, -5.0f);
+    glm::vec3 cameraTarget(lookLeftRight, lookUpDown, 0.0f);
+
+    glm::mat4 view = glm::lookAt(cameraPosition, cameraTarget, upVector);
+    m_shader->setUniform("view", view, false);
+
+    glm::mat4 projection = glm::perspective(fov, aspectRatio, nearClip, farClip);
+    m_shader->setUniform("projection", projection, false);
 }
 
 OpenGLWindow * Scene::getWindow()
@@ -292,9 +357,11 @@ void Scene::onKey(Key key, Action action, Modifier modifier)
 
 }
 
-void Scene::onMouseMove(MousePosition mouseposition)
+void Scene::onMouseMove(MousePosition mouse)
 {
-
+    int prescaler = 50;
+    moveCameraLeftRight += (mouse.X - mouse.oldX) / prescaler;
+    moveCameraUpDown += (mouse.Y - mouse.oldY) / prescaler;
 }
 
 void Scene::onMouseButton(MouseButton button, Action action, Modifier modifier)

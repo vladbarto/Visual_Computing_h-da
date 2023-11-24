@@ -307,6 +307,7 @@ float lookLeftRight = 0.0f;  // for x-Axis
 float moveCameraUpDown = 0.0f; //for y-Axis
 float moveCameraLeftRight = 0.0f; // for x-Axis
 MousePosition mousePosition;
+float moveCameraForwardZ = -5.0f;
 
 void Scene::update(float dt)
 {
@@ -335,9 +336,17 @@ void Scene::update(float dt)
 
     // Mauseingabe
     onMouseMove(mousePosition);
+    if(m_window->getInput().getMouseButtonState(MouseButton::MouseButton1) == MouseButtonState::Pressed) {
+        // Zoom in illusion. In fact we move the camera position vorwärts (forward) on z-Axis
+        moveCameraForwardZ += 0.1f;
+    }
+    if(m_window->getInput().getMouseButtonState(MouseButton::MouseButton2) == MouseButtonState::Pressed) {
+        // Zoom in illusion. In fact we move the camera position rückwärts (backward) on z-Axis
+        moveCameraForwardZ -= 0.1f;
+    }
     std::cout<<"MouseX (new): "<<mousePosition.X<<"\nMouseY (new): "<<mousePosition.Y<<std::endl<<std::endl;
     glm::vec3 upVector = glm::vec3(0.0f, 1.0f, 0.0f);
-    glm::vec3 cameraPosition(moveCameraLeftRight, moveCameraUpDown, -5.0f);
+    glm::vec3 cameraPosition(moveCameraLeftRight, moveCameraUpDown, moveCameraForwardZ);
     glm::vec3 cameraTarget(lookLeftRight, lookUpDown, 0.0f);
 
     glm::mat4 view = glm::lookAt(cameraPosition, cameraTarget, upVector);
@@ -360,8 +369,11 @@ void Scene::onKey(Key key, Action action, Modifier modifier)
 void Scene::onMouseMove(MousePosition mouse)
 {
     int prescaler = 50;
-    moveCameraLeftRight += (mouse.X - mouse.oldX) / prescaler;
-    moveCameraUpDown += (mouse.Y - mouse.oldY) / prescaler;
+    if(m_window->getInput().getMouseButtonState(MouseButton::MouseButton3) == MouseButtonState::Pressed) {
+        // Rotate camera only if the scroll button is pressed
+        moveCameraLeftRight += (mouse.X - mouse.oldX) / prescaler;
+        moveCameraUpDown += (mouse.Y - mouse.oldY) / prescaler;
+    }
 }
 
 void Scene::onMouseButton(MouseButton button, Action action, Modifier modifier)

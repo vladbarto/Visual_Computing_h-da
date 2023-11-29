@@ -28,15 +28,29 @@ private:
 	OpenGLWindow* m_window;
 	AssetManager m_assets;
     ShaderProgram* m_shader;
-    GLuint vaoID, vboID;
+    GLuint vaoID_tyre, vaoID_cube, vboID_tyre, vboID_cube;
 
-	Transform head;
-	Transform body;
-	Transform leftUpperArm;
-	Transform rightUpperArm;
-	Transform leftLowerArm;
-	Transform rightLowerArm;
-	Transform leftLeg;
-	Transform rightLeg;
+    Transform FrontAxis_L;
+    Transform FrontAxis_R;
+    Transform RearAxis_L;
+    Transform RearAxis_R;
+
+    Transform Floor;
+    Transform Cockpit;
+    Transform Chair_bottom;
+    Transform Chair_back;
+    Transform Pillar_L;
+    Transform Pillar_R;
+    Transform Spoiler;
+
+    Transform cube;
+
+    void Szenegraph_Tyres();
+
+    void Szenegraph_Main_Body();
+
+    void Szenegraph_Spoiler();
+
+    void render_shapes_on_screen();
 };
 

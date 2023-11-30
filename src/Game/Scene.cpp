@@ -203,7 +203,10 @@ void Scene::render_shapes_on_screen () {
 //    glDrawElements(GL_TRIANGLES, sizeof(cubeInd), GL_UNSIGNED_INT, 0);
 }
 
+//Global:
 float displacement_factor = 0;
+int launchTrigger = 0;
+
 void Scene::render(float dt)
 {
     /**
@@ -244,18 +247,19 @@ void Scene::render(float dt)
 
     glm::vec4 translate_car = glm::vec4(-0.02f, 0.0f, 0.0f, 1.0f);
 
-    {/**
-     * De-comment this block to make the car move
-     * Comment this block to make the car stay where it is
-     */
-    displacement_factor += -0.02f;
-    Floor.translate(translate_car);
-    Cockpit.translate(translate_car);
-    Chair_bottom.translate(translate_car);
-    Chair_back.translate(translate_car);
-    Pillar_L.translate(translate_car);
-    Pillar_R.translate(translate_car);
-    Spoiler.translate(translate_car);
+    if(launchTrigger == 1)
+    {    /**
+         * De-comment this block to make the car move
+         * Comment this block to make the car stay where it is
+         */
+        displacement_factor += -0.02f;
+        Floor.translate(translate_car);
+        Cockpit.translate(translate_car);
+        Chair_bottom.translate(translate_car);
+        Chair_back.translate(translate_car);
+        Pillar_L.translate(translate_car);
+        Pillar_R.translate(translate_car);
+        Spoiler.translate(translate_car);
     }
 
     glBindVertexArray(0); // good programmers should use reset
@@ -307,6 +311,10 @@ void Scene::update(float dt)
         // Zoom out illusion. In fact, we move the camera position rückwärts (backward) on z-Axis
         moveCameraForwardZ -= 0.1f;
     }
+    if(m_window->getInput().getKeyState(Key::L) == KeyState::Pressed) {
+        launchTrigger = (launchTrigger == 0)? 1:0;
+    }
+
     glm::vec3 upVector = glm::vec3(0.0f, 1.0f, 0.0f);
     glm::vec3 cameraPosition(moveCameraLeftRight, moveCameraUpDown, moveCameraForwardZ);
     glm::vec3 cameraTarget(moveCameraTargetX, moveCameraTargetY, moveCameraTargetZ);

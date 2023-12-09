@@ -1,5 +1,5 @@
 #include "Scene.h"
-#include "Cube.h"
+#include "Cube_normals.h"
 #include "Transform.h"
 #include "Tyre.h"
 #include <AssetManager.h>
@@ -127,9 +127,9 @@ bool Scene::init()
         glBindVertexArray(vaoID_cube);  //Bind VAO_Cube
 
         // describe VBO in VAO (again)
-        glVertexAttribPointer(0, 3, GL_FLOAT, false, 24, 0); //function call for Vertices (x, y, z)
+        glVertexAttribPointer(0, 3, GL_FLOAT, false, 36, 0); //function call for Vertices (x, y, z)
         glEnableVertexAttribArray(0);
-        glVertexAttribPointer(1, 3, GL_FLOAT, false, 24, (void*)12); //function call for Vertices (r, g, b)
+        glVertexAttribPointer(1, 3, GL_FLOAT, false, 36, (void*)12); //function call for Vertices (r, g, b)
         glEnableVertexAttribArray(1);
 
         glGenBuffers(1, &iboID_cube); // only works after glGenVertexArrays()
@@ -141,6 +141,14 @@ bool Scene::init()
          */
         Szenegraph_Main_Body();
         Szenegraph_Spoiler();
+
+        lichtQuelle = glm::vec3(0.0, 0.0, 0.0);
+        lichtFarbe = glm::vec3(1.0, 1.0, 0.0);
+        lichtIntensitat = 1;
+        ambientLight = glm::vec3(0.5f, 0.5f, 0.5f); // Exemplu pentru lumină ambientală
+        specularFarbe = glm::vec3(1.0f, 1.0f, 1.0f);
+        shininess = 30.0f; // Exemplu pentru shininess
+
 
         // Aufgabe 1.4
         glEnable(GL_CULL_FACE);
@@ -210,13 +218,10 @@ int launchTrigger = 0;
 void Scene::render(float dt)
 {
     /**
-     * Revolve the cube around x and y
-     */
-
-    /**
      * Aufgabe 2.3.2: Hintergrund löschen
      */
-    glClearColor(0.0f, 0.66f, 0.37f, 1.0f);
+    //glClearColor(0.0f, 0.66f, 0.37f, 1.0f);
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     render_shapes_on_screen();
@@ -276,7 +281,7 @@ float moveCameraForwardZ = -5.0f;
 float moveCameraTargetX = 0.0f;
 float moveCameraTargetY = 0.0f;
 float moveCameraTargetZ = 0.0f;
-
+#include <stdio.h>
 void Scene::update(float dt)
 {
     int width = 16;
@@ -325,6 +330,44 @@ void Scene::update(float dt)
 
     glm::mat4 projection = glm::perspective(fov, aspectRatio, nearClip, farClip);
     m_shader->setUniform("projection", projection, false);
+
+    /**
+     * <- and -> move Light source on x-Axis
+     * up and down move Light source on y-Axis
+     * , and . move Light source on z-Axis
+     */
+    if(m_window->getInput().getKeyState(Key::Up) == KeyState::Pressed) {
+        lichtQuelle.y += 0.1f;
+    }
+    if(m_window->getInput().getKeyState(Key::Down) == KeyState::Pressed) {
+        lichtQuelle.y -= 0.1f;
+    }
+    if(m_window->getInput().getKeyState(Key::Right) == KeyState::Pressed) {
+        lichtQuelle.x -= 0.1f;
+    }
+    if(m_window->getInput().getKeyState(Key::Left) == KeyState::Pressed) {
+        lichtQuelle.x += 0.1f;
+    }
+    if(m_window->getInput().getKeyState(Key::Period) == KeyState::Pressed) {
+        lichtQuelle.z += 0.1f;
+    }
+    if(m_window->getInput().getKeyState(Key::Comma) == KeyState::Pressed) {
+        lichtQuelle.z -= 0.1f;
+    }
+    printf("Licht Quelle: (x:) %f, (y1:) %f, (z:) %f\n", lichtQuelle.x, lichtQuelle.y, lichtQuelle.z);
+    lichtFarbe = glm::vec3(1.0f, 1.0f, 0.0f); // Actualizați culoarea sursei de lumină în funcție de nevoile dvs.
+    lichtIntensitat = 1.0f; // Actualizați intensitatea sursei de lumină în funcție de nevoile dvs.
+    ambientLight = glm::vec3(0.2f, 0.2f, 0.2f); // Actualizați lumină ambientală în funcție de nevoile dvs.
+    specularFarbe = glm::vec3(1.0f, 1.0f, 1.0f); // Actualizați culoarea speculare în funcție de nevoile dvs.
+    shininess = 30.0f; // Actualizați shininess în funcție de nevoile dvs.
+
+    // După această actualizare, puteți transmite acești parametri către shaderul OpenGL, similar cu modul în care este transmisă matricea de vedere și proiecție.
+    m_shader->setUniform("lightPos", lichtQuelle);
+    m_shader->setUniform("lightColor", lichtFarbe);
+    m_shader->setUniform("lightIntensity", lichtIntensitat);
+    m_shader->setUniform("lightColorAmbient", ambientLight);
+    m_shader->setUniform("matSpecular", specularFarbe);
+    m_shader->setUniform("matShininess", shininess);
 }
 
 OpenGLWindow * Scene::getWindow()

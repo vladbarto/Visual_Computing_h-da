@@ -1,4 +1,4 @@
-# Install script for directory: /home/vlad/Documents/FACULTA/AN3/SEM1/VC/Termin_1/OpenGL_Praktikum/libs/glm-master/test/ext
+# Install script for directory: /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/test/ext
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

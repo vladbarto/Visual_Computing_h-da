@@ -3,6 +3,7 @@
 #include "Transform.h"
 #include "Tyre.h"
 #include <AssetManager.h>
+#include <stdio.h>
 
 int FrameCounter = 0;
 
@@ -100,7 +101,7 @@ bool Scene::init()
         // describe VBO in VAO
         glVertexAttribPointer(0, 3, GL_FLOAT, false, 24, 0); //function call for Vertices (x, y, z)
         glEnableVertexAttribArray(0);
-        glVertexAttribPointer(1, 3, GL_FLOAT, false, 24, (void*)12); //function call for Vertices (r, g, b)
+        glVertexAttribPointer(1, 3, GL_FLOAT, false, 24, (void*)24); //function call for Vertices (r, g, b)
         glEnableVertexAttribArray(1);
 
         // Aufgabe 1.1 d : Setup IBO
@@ -129,8 +130,11 @@ bool Scene::init()
         // describe VBO in VAO (again)
         glVertexAttribPointer(0, 3, GL_FLOAT, false, 36, 0); //function call for Vertices (x, y, z)
         glEnableVertexAttribArray(0);
-        glVertexAttribPointer(1, 3, GL_FLOAT, false, 36, (void*)12); //function call for Vertices (r, g, b)
+        glVertexAttribPointer(1, 3, GL_FLOAT, false, 36, (void*)12); //function call for Vertex_Normals (nx, ny, nz)
         glEnableVertexAttribArray(1);
+        glVertexAttribPointer(2, 3, GL_FLOAT, false, 36, (void*)24); //function call for Vertices (r, g, b)
+        glEnableVertexAttribArray(2);
+
 
         glGenBuffers(1, &iboID_cube); // only works after glGenVertexArrays()
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, iboID_cube);
@@ -143,12 +147,13 @@ bool Scene::init()
         Szenegraph_Spoiler();
 
         lichtQuelle = glm::vec3(0.0, 0.0, 0.0);
-        lichtFarbe = glm::vec3(1.0, 1.0, 0.0);
-        lichtIntensitat = 1;
-        ambientLight = glm::vec3(0.5f, 0.5f, 0.5f); // Exemplu pentru lumină ambientală
+        lichtFarbe = glm::vec3(1.0, 94.0/255., 5.0/255.0);
+        lichtIntensitat = 1000;
+        ambientLight = glm::vec3(255, 94, 5); // Ambiental Light Example
         specularFarbe = glm::vec3(1.0f, 1.0f, 1.0f);
-        shininess = 30.0f; // Exemplu pentru shininess
-
+        shininess = 30.0f;
+        matDiffuse = glm::vec3(0.0, 0.37, 0.63);
+        matEmissive = glm::vec3(0.0, 1.0, 0.0);
 
         // Aufgabe 1.4
         glEnable(GL_CULL_FACE);
@@ -274,14 +279,14 @@ void Scene::render(float dt)
 }
 
 // Global:
-float moveCameraUpDown = 0.0f; //for y-Axis
-float moveCameraLeftRight = 0.0f; // for x-Axis
+float cameraPositionY = 0.0f; //for y-Axis
+float cameraPositionX = 0.0f; // for x-Axis
+float cameraPositionZ = -10.0f;
 MousePosition mousePosition;
-float moveCameraForwardZ = -5.0f;
-float moveCameraTargetX = 0.0f;
-float moveCameraTargetY = 0.0f;
-float moveCameraTargetZ = 0.0f;
-#include <stdio.h>
+float cameraTargetX = 0.0f;
+float cameraTargetY = 0.0f;
+float cameraTargetZ = 0.0f;
+
 void Scene::update(float dt)
 {
     int width = 16;
@@ -294,35 +299,37 @@ void Scene::update(float dt)
 
     // Tastatureingabe
     if(m_window->getInput().getKeyState(Key::W) == KeyState::Pressed) {
-        moveCameraTargetY += 0.1f;
+        cameraPositionY += 0.1f;
+        cameraTargetY += 0.1f;
     }
     if(m_window->getInput().getKeyState(Key::S) == KeyState::Pressed) {
-        moveCameraTargetY -= 0.1f;
+        cameraPositionY -= 0.1f;
+        cameraTargetY -= 0.1f;
     }
     if(m_window->getInput().getKeyState(Key::A) == KeyState::Pressed) {
-        moveCameraTargetX += 0.1f;
+        cameraPositionX += 0.1f;
+        cameraTargetX += 0.1f;
     }
     if(m_window->getInput().getKeyState(Key::D) == KeyState::Pressed) {
-        moveCameraTargetX -= 0.1f;
+        cameraPositionX -= 0.1f;
+        cameraTargetX -= 0.1f;
+    }
+    if(m_window->getInput().getKeyState(Key::E) == KeyState::Pressed) {
+        cameraPositionZ += 0.1f;
+        cameraTargetZ += 0.1f;
+    }
+    if(m_window->getInput().getKeyState(Key::Q) == KeyState::Pressed) {
+        cameraPositionZ -= 0.1f;
+        cameraTargetZ -= 0.1f;
     }
 
-    // Mauseingabe
-    onMouseMove(mousePosition);
-    if(m_window->getInput().getMouseButtonState(MouseButton::MouseButton1) == MouseButtonState::Pressed) {
-        // Zoom in illusion. In fact, we move the camera position vorwärts (forward) on z-Axis
-        moveCameraForwardZ += 0.1f;
-    }
-    if(m_window->getInput().getMouseButtonState(MouseButton::MouseButton2) == MouseButtonState::Pressed) {
-        // Zoom out illusion. In fact, we move the camera position rückwärts (backward) on z-Axis
-        moveCameraForwardZ -= 0.1f;
-    }
     if(m_window->getInput().getKeyState(Key::L) == KeyState::Pressed) {
         launchTrigger = (launchTrigger == 0)? 1:0;
     }
 
     glm::vec3 upVector = glm::vec3(0.0f, 1.0f, 0.0f);
-    glm::vec3 cameraPosition(moveCameraLeftRight, moveCameraUpDown, moveCameraForwardZ);
-    glm::vec3 cameraTarget(moveCameraTargetX, moveCameraTargetY, moveCameraTargetZ);
+    glm::vec3 cameraPosition(cameraPositionX, cameraPositionY, cameraPositionZ);
+    glm::vec3 cameraTarget(cameraTargetX, cameraTargetY, cameraTargetZ);
 
     /** View and Projection Matrices loading into Vertex Shader */
     glm::mat4 view = glm::lookAt(cameraPosition, cameraTarget, upVector);
@@ -355,11 +362,11 @@ void Scene::update(float dt)
         lichtQuelle.z -= 0.1f;
     }
     printf("Licht Quelle: (x:) %f, (y1:) %f, (z:) %f\n", lichtQuelle.x, lichtQuelle.y, lichtQuelle.z);
-    lichtFarbe = glm::vec3(1.0f, 1.0f, 0.0f); // Actualizați culoarea sursei de lumină în funcție de nevoile dvs.
-    lichtIntensitat = 1.0f; // Actualizați intensitatea sursei de lumină în funcție de nevoile dvs.
-    ambientLight = glm::vec3(0.2f, 0.2f, 0.2f); // Actualizați lumină ambientală în funcție de nevoile dvs.
-    specularFarbe = glm::vec3(1.0f, 1.0f, 1.0f); // Actualizați culoarea speculare în funcție de nevoile dvs.
-    shininess = 30.0f; // Actualizați shininess în funcție de nevoile dvs.
+//    lichtFarbe = glm::vec3(1.0f, 1.0f, 0.0f); // Actualizați culoarea sursei de lumină în funcție de nevoile dvs.
+//    lichtIntensitat = 1.0f; // Actualizați intensitatea sursei de lumină în funcție de nevoile dvs.
+//    ambientLight = glm::vec3(0.2f, 0.2f, 0.2f); // Actualizați lumină ambientală în funcție de nevoile dvs.
+//    specularFarbe = glm::vec3(1.0f, 1.0f, 1.0f); // Actualizați culoarea speculare în funcție de nevoile dvs.
+//    shininess = 30.0f; // Actualizați shininess în funcție de nevoile dvs.
 
     // După această actualizare, puteți transmite acești parametri către shaderul OpenGL, similar cu modul în care este transmisă matricea de vedere și proiecție.
     m_shader->setUniform("lightPos", lichtQuelle);
@@ -368,6 +375,8 @@ void Scene::update(float dt)
     m_shader->setUniform("lightColorAmbient", ambientLight);
     m_shader->setUniform("matSpecular", specularFarbe);
     m_shader->setUniform("matShininess", shininess);
+    //m_shader->setUniform("matDiffuse", matDiffuse);
+    m_shader->setUniform("matEmissive", matEmissive);
 }
 
 OpenGLWindow * Scene::getWindow()
@@ -394,49 +403,19 @@ float arccos_two_vectors (glm::vec3 a, glm::vec3 b) {
     //Returns in Degrees
     return acos((dot_product_two_vectors(a, b)) / (length_of_a_vector(a) * length_of_a_vector(b))) * 3.14 * 10000 / 180;
 }
+float det_z_with_respect_to_xy(glm::vec2 center, float radius, float xy) {
+    // I am using here the equation of Circle
+    return center.y + sqrt(radius*radius - (xy-center.x) * (xy-center.x));
+}
 void Scene::onMouseMove(MousePosition mouse)
 {
     int prescaler = 50;
 
     if(m_window->getInput().getMouseButtonState(MouseButton::MouseButton3) == MouseButtonState::Pressed) {
-        if(m_window->getInput().getKeyState(Key::LeftShift) == KeyState::Pressed) {
             // So if LeftShift + ScrollMouseButton
-            moveCameraTargetX += (mouse.X - mouse.oldX) / prescaler;
-            moveCameraTargetY += (mouse.Y - mouse.oldY) / prescaler;
-            moveCameraTargetZ += ((mouse.X - mouse.oldX) + (mouse.Y - mouse.oldY)) / prescaler;
-
-            moveCameraLeftRight += (mouse.X - mouse.oldX) / prescaler;
-            moveCameraUpDown += (mouse.Y - mouse.oldY) / prescaler;
-        }
-        else
-        {
-            // Rotate camera only if the scroll button is pressed, without LeftShift
-            moveCameraUpDown += (mouse.Y - mouse.oldY) / prescaler;
-            glm::vec3 initialCameraLookVector = glm::vec3(0.0f,
-                                                          0.0f,
-                                                          0.5f);
-            glm::vec3 currentCameraLookVector = glm::vec3(moveCameraTargetX - moveCameraLeftRight,
-                                                          moveCameraTargetY - moveCameraUpDown,
-                                                          moveCameraTargetZ - moveCameraForwardZ);
-            int arccos = (int)arccos_two_vectors(initialCameraLookVector, currentCameraLookVector) % 360;
-            if(arccos >= 0 && arccos < 90) {
-                moveCameraLeftRight += (mouse.X - mouse.oldX) / prescaler;
-                moveCameraForwardZ += (mouse.X - mouse.oldX) / prescaler;
-            }
-            else if(arccos >= 90 && arccos < 180) {
-                moveCameraLeftRight -= (mouse.X - mouse.oldX) / prescaler;
-                moveCameraForwardZ += (mouse.X - mouse.oldX) / prescaler;
-            }
-            else if(arccos >= 180 && arccos < 270) {
-                moveCameraLeftRight -= (mouse.X - mouse.oldX) / prescaler;
-                moveCameraForwardZ -= (mouse.X - mouse.oldX) / prescaler;
-            }
-            else if(arccos >= 270 && arccos < 360) {
-                moveCameraLeftRight += (mouse.X - mouse.oldX) / prescaler;
-                moveCameraForwardZ -= (mouse.X - mouse.oldX) / prescaler;
-            }
-            std::cout<<arccos_two_vectors(initialCameraLookVector, currentCameraLookVector)<<"\n";
-        }
+            cameraPositionX += (mouse.X - mouse.oldX) / prescaler;
+            cameraPositionY += (mouse.Y - mouse.oldY) / prescaler;
+            cameraPositionZ += det_z_with_respect_to_xy(glm::vec2(0.0 -0.5), 5.0, cameraPositionX + cameraPositionY) / prescaler;
     }
 }
 

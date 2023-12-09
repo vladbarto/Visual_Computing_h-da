@@ -50,8 +50,9 @@ private:
     float lichtIntensitat;
     glm::vec3 ambientLight;
     glm::vec3 specularFarbe;  // 1.Materialparameter
-    float shininess;  // 2.Materialparameter
-    // Glanzfaktor k
+    float shininess;  // 2.Materialparameter; Glanzfaktor k
+    glm::vec3 matDiffuse;
+    glm::vec3 matEmissive;
 
     void Szenegraph_Tyres();
 

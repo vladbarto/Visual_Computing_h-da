@@ -371,7 +371,7 @@ void Scene::update(float dt)
     m_shader->setUniform("matSpecular", specularFarbe);
     m_shader->setUniform("matShininess", shininess);
     //m_shader->setUniform("matDiffuse", matDiffuse);
-    m_shader->setUniform("matEmissive", matEmissive);
+    //m_shader->setUniform("matEmissive", matEmissive);
 }
 
 OpenGLWindow * Scene::getWindow()

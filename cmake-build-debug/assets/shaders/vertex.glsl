@@ -9,10 +9,14 @@ uniform mat4 projection;
 
 uniform vec3 lightPos;
 out vec3 Normal, LightDir, ViewDir;
+out vec3 colorVS;
 
 void main(){
     vec4 v = vec4(vertex, 1.0);
     gl_Position = projection * view * model * v;
+
+    // sehr interessant:
+    colorVS = vertex_normal;
 
     // compute normal in view space
     vec4 n = vec4(vertex_normal, 0.0);

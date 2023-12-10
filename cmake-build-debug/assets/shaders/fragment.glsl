@@ -15,6 +15,8 @@ uniform vec3 matSpecular;
 uniform float matShininess;
 
 void main(){
+    color = vec4(colorVS, 1.0);
+
     // normalise everything necessary
     vec3 N = normalize(Normal);
     vec3 L = normalize(LightDir);
@@ -22,7 +24,7 @@ void main(){
     // diffuse component
     float cosa = max(0.0, dot(N, L));
     vec3 DiffuseTerm = matDiffuse * lightColor;
-    color = vec4(DiffuseTerm * cosa, 1.0);
+    //color += vec4(DiffuseTerm * cosa, 1.0);
 
     // ambient emissive component
     vec3 AmbientEmissiveTerm = matEmissive + matDiffuse * lightColorAmbient;

@@ -30,6 +30,8 @@ private:
     ShaderProgram* m_shader;
     GLuint vaoID_tyre, vaoID_cube, vboID_tyre, vboID_cube;
 
+    glm::vec3 cameraPosition = glm::vec3(0.0f, 0.0f, -10.0f);
+
     Transform FrontAxis_L;
     Transform FrontAxis_R;
     Transform RearAxis_L;

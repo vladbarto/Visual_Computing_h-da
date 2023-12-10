@@ -279,9 +279,6 @@ void Scene::render(float dt)
 }
 
 // Global:
-float cameraPositionY = 0.0f; //for y-Axis
-float cameraPositionX = 0.0f; // for x-Axis
-float cameraPositionZ = -10.0f;
 MousePosition mousePosition;
 float cameraTargetX = 0.0f;
 float cameraTargetY = 0.0f;
@@ -299,27 +296,27 @@ void Scene::update(float dt)
 
     // Tastatureingabe
     if(m_window->getInput().getKeyState(Key::W) == KeyState::Pressed) {
-        cameraPositionY += 0.1f;
+        cameraPosition.y += 0.1f;
         cameraTargetY += 0.1f;
     }
     if(m_window->getInput().getKeyState(Key::S) == KeyState::Pressed) {
-        cameraPositionY -= 0.1f;
+        cameraPosition.y -= 0.1f;
         cameraTargetY -= 0.1f;
     }
     if(m_window->getInput().getKeyState(Key::A) == KeyState::Pressed) {
-        cameraPositionX += 0.1f;
+        cameraPosition.x += 0.1f;
         cameraTargetX += 0.1f;
     }
     if(m_window->getInput().getKeyState(Key::D) == KeyState::Pressed) {
-        cameraPositionX -= 0.1f;
+        cameraPosition.x -= 0.1f;
         cameraTargetX -= 0.1f;
     }
     if(m_window->getInput().getKeyState(Key::E) == KeyState::Pressed) {
-        cameraPositionZ += 0.1f;
+        cameraPosition.z += 0.1f;
         cameraTargetZ += 0.1f;
     }
     if(m_window->getInput().getKeyState(Key::Q) == KeyState::Pressed) {
-        cameraPositionZ -= 0.1f;
+        cameraPosition.z -= 0.1f;
         cameraTargetZ -= 0.1f;
     }
 
@@ -328,7 +325,7 @@ void Scene::update(float dt)
     }
 
     glm::vec3 upVector = glm::vec3(0.0f, 1.0f, 0.0f);
-    glm::vec3 cameraPosition(cameraPositionX, cameraPositionY, cameraPositionZ);
+    //cameraPosition = glm::vec3(cameraPositionX, cameraPositionY, cameraPositionZ);
     glm::vec3 cameraTarget(cameraTargetX, cameraTargetY, cameraTargetZ);
 
     /** View and Projection Matrices loading into Vertex Shader */
@@ -361,12 +358,10 @@ void Scene::update(float dt)
     if(m_window->getInput().getKeyState(Key::Comma) == KeyState::Pressed) {
         lichtQuelle.z -= 0.1f;
     }
-    printf("Licht Quelle: (x:) %f, (y1:) %f, (z:) %f\n", lichtQuelle.x, lichtQuelle.y, lichtQuelle.z);
-//    lichtFarbe = glm::vec3(1.0f, 1.0f, 0.0f); // Actualizați culoarea sursei de lumină în funcție de nevoile dvs.
-//    lichtIntensitat = 1.0f; // Actualizați intensitatea sursei de lumină în funcție de nevoile dvs.
-//    ambientLight = glm::vec3(0.2f, 0.2f, 0.2f); // Actualizați lumină ambientală în funcție de nevoile dvs.
-//    specularFarbe = glm::vec3(1.0f, 1.0f, 1.0f); // Actualizați culoarea speculare în funcție de nevoile dvs.
-//    shininess = 30.0f; // Actualizați shininess în funcție de nevoile dvs.
+
+    /**
+     * Place for updating other factors like lichtQuelle, lichtFarbe and all of the below
+     */
 
     // După această actualizare, puteți transmite acești parametri către shaderul OpenGL, similar cu modul în care este transmisă matricea de vedere și proiecție.
     m_shader->setUniform("lightPos", lichtQuelle);
@@ -409,14 +404,31 @@ float det_z_with_respect_to_xy(glm::vec2 center, float radius, float xy) {
 }
 void Scene::onMouseMove(MousePosition mouse)
 {
-    int prescaler = 50;
+    int prescaler = 1;
 
-    if(m_window->getInput().getMouseButtonState(MouseButton::MouseButton3) == MouseButtonState::Pressed) {
-            // So if LeftShift + ScrollMouseButton
-            cameraPositionX += (mouse.X - mouse.oldX) / prescaler;
-            cameraPositionY += (mouse.Y - mouse.oldY) / prescaler;
-            cameraPositionZ += det_z_with_respect_to_xy(glm::vec2(0.0 -0.5), 5.0, cameraPositionX + cameraPositionY) / prescaler;
+    // Check if the right mouse button is pressed (you can modify this based on your setup)
+    if (m_window->getInput().getKeyState(Key::LeftShift) == KeyState::Pressed) {
+        // Calculate the change in mouse position
+        float dx = -static_cast<float>(mouse.X - mousePosition.X) / prescaler;
+        float dy = static_cast<float>(mouse.Y - mousePosition.Y) / prescaler;
+
+        // Create rotation matrices
+        glm::mat4 rotateX = glm::rotate(glm::mat4(1.0f), glm::radians(dy), glm::vec3(1.0f, 0.0f, 0.0f));
+        glm::mat4 rotateY = glm::rotate(glm::mat4(1.0f), glm::radians(dx), glm::vec3(0.0f, 1.0f, 0.0f));
+
+        // Apply rotations to camera position
+        glm::vec4 rotatedPosition = rotateX * rotateY * glm::vec4(cameraPosition, 1.0f);
+        cameraPosition = glm::vec3(rotatedPosition);
+
+        // Update the camera target accordingly (assuming it's a look-at camera)
+        glm::vec3 upVector = glm::vec3(0.0f, 1.0f, 0.0f);
+        glm::vec3 cameraTarget = glm::vec3(0.0f, 0.0f, 0.0f);
+        glm::mat4 view = glm::lookAt(cameraPosition, cameraTarget, upVector);
+        m_shader->setUniform("view", view, false);
     }
+
+    // Update the mouse position for the next frame
+    mousePosition = mouse;
 }
 
 void Scene::onMouseButton(MouseButton button, Action action, Modifier modifier)

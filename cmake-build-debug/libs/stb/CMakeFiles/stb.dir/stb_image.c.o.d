@@ -1,7 +1,7 @@
 libs/stb/CMakeFiles/stb.dir/stb_image.c.o: \
- /home/vlad/Documents/Visual_Computing_h-da/libs/stb/stb_image.c \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/stb/stb_image.c \
  /usr/include/stdc-predef.h \
- /home/vlad/Documents/Visual_Computing_h-da/libs/stb/stb_image.h \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/stb/stb_image.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \

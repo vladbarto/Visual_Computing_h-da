@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/259/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /snap/clion/260/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/259/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /snap/clion/260/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vlad/Documents/Visual_Computing_h-da
+CMAKE_SOURCE_DIR = /home/vlad/Desktop/Visual_Computing_h-da
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug
+CMAKE_BINARY_DIR = /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	/snap/clion/259/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/260/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/snap/clion/259/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/260/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -97,49 +97,49 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/snap/clion/259/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+	/snap/clion/260/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/snap/clion/259/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+	/snap/clion/260/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/snap/clion/259/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/260/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/snap/clion/259/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/260/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/snap/clion/259/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/260/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/snap/clion/259/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/260/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/CMakeFiles /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake//CMakeFiles/progress.marks
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glew-2.1.0/build/cmake/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/CMakeFiles 0
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/CMakeFiles /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake//CMakeFiles/progress.marks
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glew-2.1.0/build/cmake/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glew-2.1.0/build/cmake/clean
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glew-2.1.0/build/cmake/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glew-2.1.0/build/cmake/preinstall
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glew-2.1.0/build/cmake/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glew-2.1.0/build/cmake/preinstall
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glew-2.1.0/build/cmake/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/rule:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/rule
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/rule
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ glew: libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/rule
 
 # fast build rule for target.
 glew/fast:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build
 .PHONY : glew/fast
 
 # Convenience name for target.
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/rule:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/rule
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/rule
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ glew_s: libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/rule
 
 # fast build rule for target.
 glew_s/fast:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build
 .PHONY : glew_s/fast
 
 __/__/src/glew.o: __/__/src/glew.c.o
@@ -194,8 +194,8 @@ __/__/src/glew.o: __/__/src/glew.c.o
 
 # target to build an object file
 __/__/src/glew.c.o:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.o
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.o
 .PHONY : __/__/src/glew.c.o
 
 __/__/src/glew.i: __/__/src/glew.c.i
@@ -203,8 +203,8 @@ __/__/src/glew.i: __/__/src/glew.c.i
 
 # target to preprocess a source file
 __/__/src/glew.c.i:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.i
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.i
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.i
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.i
 .PHONY : __/__/src/glew.c.i
 
 __/__/src/glew.s: __/__/src/glew.c.s
@@ -212,8 +212,8 @@ __/__/src/glew.s: __/__/src/glew.c.s
 
 # target to generate assembly for a file
 __/__/src/glew.c.s:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.s
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.s
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.s
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.s
 .PHONY : __/__/src/glew.c.s
 
 # Help Target
@@ -244,6 +244,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -8,26 +8,26 @@
 		<Option virtualFolders="CMake Files\;CMake Files\libs\;CMake Files\libs\glfw-3.2.1\;CMake Files\libs\glfw-3.2.1\CMake\;CMake Files\libs\glfw-3.2.1\CMake\modules\;CMake Files\libs\glfw-3.2.1\src\;CMake Files\libs\glm-master\;CMake Files\libs\glm-master\cmake\;CMake Files\libs\glm-master\glm\;CMake Files\libs\glm-master\test\;CMake Files\libs\glm-master\test\bug\;CMake Files\libs\glm-master\test\core\;CMake Files\libs\glm-master\test\ext\;CMake Files\libs\glm-master\test\gtc\;CMake Files\libs\glm-master\test\gtx\;CMake Files\libs\glew-2.1.0\;CMake Files\libs\glew-2.1.0\build\;CMake Files\libs\glew-2.1.0\build\cmake\;CMake Files\libs\stb\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1"/>
+				<Option working_dir="/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfw">
-				<Option output="/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src"/>
+				<Option output="/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
-					<Add directory="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/include"/>
-					<Add directory="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src"/>
-					<Add directory="/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src"/>
+					<Add directory="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/include"/>
+					<Add directory="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src"/>
+					<Add directory="/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -37,23 +37,23 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 glfw"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 glfw"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfw/fast">
-				<Option output="/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src"/>
+				<Option output="/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
-					<Add directory="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/include"/>
-					<Add directory="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src"/>
-					<Add directory="/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src"/>
+					<Add directory="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/include"/>
+					<Add directory="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src"/>
+					<Add directory="/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -63,158 +63,158 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/glfw_config.h">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/glfw_config.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/include/GLFW/glfw3.h">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/include/GLFW/glfw3.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/include/GLFW/glfw3native.h">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/include/GLFW/glfw3native.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/context.c">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/egl_context.c">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/egl_context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/egl_context.h">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/egl_context.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/glx_context.c">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/glx_context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/glx_context.h">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/glx_context.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/init.c">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/init.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/input.c">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/input.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/internal.h">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/internal.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/linux_joystick.c">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/linux_joystick.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/linux_joystick.h">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/linux_joystick.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/monitor.c">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/monitor.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/posix_time.c">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/posix_time.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/posix_time.h">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/posix_time.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/posix_tls.c">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/posix_tls.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/posix_tls.h">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/posix_tls.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/vulkan.c">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/vulkan.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/window.c">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/window.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/x11_init.c">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/x11_init.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/x11_monitor.c">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/x11_monitor.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/x11_platform.h">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/x11_platform.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/x11_window.c">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/x11_window.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/xkb_unicode.c">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/xkb_unicode.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/xkb_unicode.h">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/xkb_unicode.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/CMakeLists.txt">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/CMakeLists.txt">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/CMakeLists.txt">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\glfw-3.2.1\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/CMake/modules/FindVulkan.cmake">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/CMake/modules/FindVulkan.cmake">
 			<Option virtualFolder="CMake Files\libs\glfw-3.2.1\CMake\modules\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/CMakeLists.txt">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\glfw-3.2.1\src\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/glfw3.pc.in">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/glfw3.pc.in">
 			<Option virtualFolder="CMake Files\libs\glfw-3.2.1\src\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/glfw3Config.cmake.in">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/glfw3Config.cmake.in">
 			<Option virtualFolder="CMake Files\libs\glfw-3.2.1\src\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src/glfw_config.h.in">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src/glfw_config.h.in">
 			<Option virtualFolder="CMake Files\libs\glfw-3.2.1\src\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/CMakeLists.txt">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\glm-master\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/cmake_uninstall.cmake.in">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/cmake_uninstall.cmake.in">
 			<Option virtualFolder="CMake Files\libs\glm-master\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/cmake/glm.pc.in">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/cmake/glm.pc.in">
 			<Option virtualFolder="CMake Files\libs\glm-master\cmake\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/cmake/glmBuildConfig.cmake.in">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/cmake/glmBuildConfig.cmake.in">
 			<Option virtualFolder="CMake Files\libs\glm-master\cmake\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/cmake/glmConfig.cmake.in">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/cmake/glmConfig.cmake.in">
 			<Option virtualFolder="CMake Files\libs\glm-master\cmake\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/CMakeLists.txt">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\glm-master\glm\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/test/CMakeLists.txt">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\glm-master\test\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/test/bug/CMakeLists.txt">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/test/bug/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\glm-master\test\bug\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/test/core/CMakeLists.txt">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/test/core/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\glm-master\test\core\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/test/ext/CMakeLists.txt">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/test/ext/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\glm-master\test\ext\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/test/gtc/CMakeLists.txt">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/test/gtc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\glm-master\test\gtc\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/test/gtx/CMakeLists.txt">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/test/gtx/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\glm-master\test\gtx\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glew-2.1.0/glew.pc.in">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glew-2.1.0/glew.pc.in">
 			<Option virtualFolder="CMake Files\libs\glew-2.1.0\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/glew-2.1.0/build/cmake/CMakeLists.txt">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/glew-2.1.0/build/cmake/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\glew-2.1.0\build\cmake\"/>
 		</Unit>
-		<Unit filename="/home/vlad/Documents/Visual_Computing_h-da/libs/stb/CMakeLists.txt">
+		<Unit filename="/home/vlad/Desktop/Visual_Computing_h-da/libs/stb/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\stb\"/>
 		</Unit>
 	</Project>

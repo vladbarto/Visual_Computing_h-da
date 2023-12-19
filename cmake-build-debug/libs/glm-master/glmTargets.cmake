@@ -54,7 +54,7 @@ unset(_cmake_expected_targets)
 add_library(glm INTERFACE IMPORTED)
 
 set_target_properties(glm PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/vlad/Documents/Visual_Computing_h-da/libs/glm-master"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master"
 )
 
 # This file does not depend on other imported targets which have

@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/include -I/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/src -I/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src
+C_INCLUDES = -I/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/include -I/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/src -I/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src
 
 C_FLAGS = -g -fPIC -fdiagnostics-color=always -Wall
 

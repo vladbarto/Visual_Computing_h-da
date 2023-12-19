@@ -1,4 +1,4 @@
-# Install script for directory: /home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1
+# Install script for directory: /home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/cmake_install.cmake")
+  include("/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glfw-3.2.1/src/cmake_install.cmake")
 
 endif()
 

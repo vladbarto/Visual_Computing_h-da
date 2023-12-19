@@ -15,7 +15,7 @@ void main(){
     vec4 v = vec4(vertex, 1.0);
     gl_Position = projection * view * model * v;
 
-    // sehr interessant:
+    //
     colorVS = vertex_normal;
 
     // compute normal in view space

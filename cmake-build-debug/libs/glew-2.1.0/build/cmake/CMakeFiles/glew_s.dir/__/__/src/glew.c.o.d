@@ -1,7 +1,7 @@
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.o: \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glew-2.1.0/src/glew.c \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glew-2.1.0/src/glew.c \
  /usr/include/stdc-predef.h \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glew-2.1.0/build/cmake/../../include/GL/glew.h \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glew-2.1.0/build/cmake/../../include/GL/glew.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -17,7 +17,7 @@ libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glew-2.1.0/build/cmake/../../include/GL/glxew.h \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glew-2.1.0/build/cmake/../../include/GL/glxew.h \
  /usr/include/X11/Xlib.h /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \

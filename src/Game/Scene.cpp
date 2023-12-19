@@ -51,6 +51,11 @@ void Scene::Szenegraph_Main_Body () {
     Chair_back.rotate(tilt_chair_back);
     Chair_back.scale(scale_chair_back);
 
+    glm::vec4 scale_platform = glm::vec4(30.0, 0.1, 30.0, 1.0);
+    glm::vec4 translate_platform = glm::vec4(0.0f, -2.0f, 0.0f, 1.0f);
+    cube.translate(translate_platform);
+    cube.scale(scale_platform);
+
 }
 void Scene::Szenegraph_Spoiler () {
     glm::vec4 scale_pillar = glm::vec4(0.05f, 1.5f, 0.05f, 1.0f);
@@ -147,8 +152,9 @@ bool Scene::init()
         Szenegraph_Spoiler();
 
         lichtQuelle = glm::vec3(0.0, 0.0, 0.0);
-        lichtFarbe = glm::vec3(1.0, 94.0/255., 5.0/255.0);
-        lichtIntensitat = 1000;
+        //lichtFarbe = glm::vec3(1.0, 94.0/255., 5.0/255.0);
+        lichtFarbe = glm::vec3(1.0, 1.0, 1.0);
+        lichtIntensitat = 1000000000; // doens't affect
         ambientLight = glm::vec3(255, 94, 5); // Ambiental Light Example
         specularFarbe = glm::vec3(1.0f, 1.0f, 1.0f);
         shininess = 30.0f;
@@ -212,8 +218,8 @@ void Scene::render_shapes_on_screen () {
     m_shader->setUniform("model", Spoiler.getMatrix(), false);
     glDrawElements(GL_TRIANGLES, sizeof(cubeInd), GL_UNSIGNED_INT, 0);
 
-//    m_shader->setUniform("model", cube.getMatrix(), false);
-//    glDrawElements(GL_TRIANGLES, sizeof(cubeInd), GL_UNSIGNED_INT, 0);
+    m_shader->setUniform("model", cube.getMatrix(), false);
+    glDrawElements(GL_TRIANGLES, sizeof(cubeInd), GL_UNSIGNED_INT, 0);
 }
 
 //Global:

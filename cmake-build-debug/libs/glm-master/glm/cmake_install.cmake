@@ -1,4 +1,4 @@
-# Install script for directory: /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm
+# Install script for directory: /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

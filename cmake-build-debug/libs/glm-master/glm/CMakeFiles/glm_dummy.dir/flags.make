@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/vlad/Documents/Visual_Computing_h-da/libs/glm-master -I/home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/..
+CXX_INCLUDES = -I/home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master -I/home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/..
 
 CXX_FLAGS = -g -fdiagnostics-color=always -O2 -Wno-long-long
 

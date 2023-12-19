@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/259/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /snap/clion/260/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/259/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /snap/clion/260/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vlad/Documents/Visual_Computing_h-da
+CMAKE_SOURCE_DIR = /home/vlad/Desktop/Visual_Computing_h-da
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug
+CMAKE_BINARY_DIR = /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/depend.make
@@ -70,18 +70,18 @@ include libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/progress.make
 include libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/flags.make
 
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o: libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/flags.make
-libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o: /home/vlad/Documents/Visual_Computing_h-da/libs/glew-2.1.0/src/glew.c
+libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o: /home/vlad/Desktop/Visual_Computing_h-da/libs/glew-2.1.0/src/glew.c
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o: libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o -MF CMakeFiles/glew.dir/__/__/src/glew.c.o.d -o CMakeFiles/glew.dir/__/__/src/glew.c.o -c /home/vlad/Documents/Visual_Computing_h-da/libs/glew-2.1.0/src/glew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o"
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o -MF CMakeFiles/glew.dir/__/__/src/glew.c.o.d -o CMakeFiles/glew.dir/__/__/src/glew.c.o -c /home/vlad/Desktop/Visual_Computing_h-da/libs/glew-2.1.0/src/glew.c
 
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glew.dir/__/__/src/glew.c.i"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vlad/Documents/Visual_Computing_h-da/libs/glew-2.1.0/src/glew.c > CMakeFiles/glew.dir/__/__/src/glew.c.i
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vlad/Desktop/Visual_Computing_h-da/libs/glew-2.1.0/src/glew.c > CMakeFiles/glew.dir/__/__/src/glew.c.i
 
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glew.dir/__/__/src/glew.c.s"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vlad/Documents/Visual_Computing_h-da/libs/glew-2.1.0/src/glew.c -o CMakeFiles/glew.dir/__/__/src/glew.c.s
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vlad/Desktop/Visual_Computing_h-da/libs/glew-2.1.0/src/glew.c -o CMakeFiles/glew.dir/__/__/src/glew.c.s
 
 # Object files for target glew
 glew_OBJECTS = \
@@ -95,9 +95,9 @@ lib/libGLEWd.so.2.1.0: libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build.mak
 lib/libGLEWd.so.2.1.0: /usr/lib/x86_64-linux-gnu/libGL.so
 lib/libGLEWd.so.2.1.0: /usr/lib/x86_64-linux-gnu/libGLU.so
 lib/libGLEWd.so.2.1.0: libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library ../../../../lib/libGLEWd.so"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glew.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake && $(CMAKE_COMMAND) -E cmake_symlink_library ../../../../lib/libGLEWd.so.2.1.0 ../../../../lib/libGLEWd.so.2.1 ../../../../lib/libGLEWd.so
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library ../../../../lib/libGLEWd.so"
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glew.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake && $(CMAKE_COMMAND) -E cmake_symlink_library ../../../../lib/libGLEWd.so.2.1.0 ../../../../lib/libGLEWd.so.2.1 ../../../../lib/libGLEWd.so
 
 lib/libGLEWd.so.2.1: lib/libGLEWd.so.2.1.0
 	@$(CMAKE_COMMAND) -E touch_nocreate lib/libGLEWd.so.2.1
@@ -110,10 +110,10 @@ libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build: lib/libGLEWd.so
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build
 
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/clean:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake && $(CMAKE_COMMAND) -P CMakeFiles/glew.dir/cmake_clean.cmake
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake && $(CMAKE_COMMAND) -P CMakeFiles/glew.dir/cmake_clean.cmake
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/clean
 
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/depend:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vlad/Documents/Visual_Computing_h-da /home/vlad/Documents/Visual_Computing_h-da/libs/glew-2.1.0/build/cmake /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vlad/Desktop/Visual_Computing_h-da /home/vlad/Desktop/Visual_Computing_h-da/libs/glew-2.1.0/build/cmake /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/depend
 

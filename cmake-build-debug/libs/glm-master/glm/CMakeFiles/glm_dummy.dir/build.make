@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/259/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /snap/clion/260/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/259/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /snap/clion/260/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vlad/Documents/Visual_Computing_h-da
+CMAKE_SOURCE_DIR = /home/vlad/Desktop/Visual_Computing_h-da
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug
+CMAKE_BINARY_DIR = /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include libs/glm-master/glm/CMakeFiles/glm_dummy.dir/depend.make
@@ -70,32 +70,32 @@ include libs/glm-master/glm/CMakeFiles/glm_dummy.dir/progress.make
 include libs/glm-master/glm/CMakeFiles/glm_dummy.dir/flags.make
 
 libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o: libs/glm-master/glm/CMakeFiles/glm_dummy.dir/flags.make
-libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o: /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/dummy.cpp
+libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o: /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/dummy.cpp
 libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o: libs/glm-master/glm/CMakeFiles/glm_dummy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o -MF CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o.d -o CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o -c /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/dummy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o"
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o -MF CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o.d -o CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o -c /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/dummy.cpp
 
 libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/glm_dummy.dir/detail/dummy.cpp.i"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/dummy.cpp > CMakeFiles/glm_dummy.dir/detail/dummy.cpp.i
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/dummy.cpp > CMakeFiles/glm_dummy.dir/detail/dummy.cpp.i
 
 libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/glm_dummy.dir/detail/dummy.cpp.s"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/dummy.cpp -o CMakeFiles/glm_dummy.dir/detail/dummy.cpp.s
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/dummy.cpp -o CMakeFiles/glm_dummy.dir/detail/dummy.cpp.s
 
 libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.o: libs/glm-master/glm/CMakeFiles/glm_dummy.dir/flags.make
-libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.o: /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/glm.cpp
+libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.o: /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/glm.cpp
 libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.o: libs/glm-master/glm/CMakeFiles/glm_dummy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.o"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.o -MF CMakeFiles/glm_dummy.dir/detail/glm.cpp.o.d -o CMakeFiles/glm_dummy.dir/detail/glm.cpp.o -c /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/glm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.o"
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.o -MF CMakeFiles/glm_dummy.dir/detail/glm.cpp.o.d -o CMakeFiles/glm_dummy.dir/detail/glm.cpp.o -c /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/glm.cpp
 
 libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/glm_dummy.dir/detail/glm.cpp.i"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/glm.cpp > CMakeFiles/glm_dummy.dir/detail/glm.cpp.i
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/glm.cpp > CMakeFiles/glm_dummy.dir/detail/glm.cpp.i
 
 libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/glm_dummy.dir/detail/glm.cpp.s"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/glm.cpp -o CMakeFiles/glm_dummy.dir/detail/glm.cpp.s
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/glm.cpp -o CMakeFiles/glm_dummy.dir/detail/glm.cpp.s
 
 # Object files for target glm_dummy
 glm_dummy_OBJECTS = \
@@ -109,18 +109,18 @@ libs/glm-master/glm/glm_dummy: libs/glm-master/glm/CMakeFiles/glm_dummy.dir/deta
 libs/glm-master/glm/glm_dummy: libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.o
 libs/glm-master/glm/glm_dummy: libs/glm-master/glm/CMakeFiles/glm_dummy.dir/build.make
 libs/glm-master/glm/glm_dummy: libs/glm-master/glm/CMakeFiles/glm_dummy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable glm_dummy"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glm_dummy.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable glm_dummy"
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glm_dummy.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 libs/glm-master/glm/CMakeFiles/glm_dummy.dir/build: libs/glm-master/glm/glm_dummy
 .PHONY : libs/glm-master/glm/CMakeFiles/glm_dummy.dir/build
 
 libs/glm-master/glm/CMakeFiles/glm_dummy.dir/clean:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm && $(CMAKE_COMMAND) -P CMakeFiles/glm_dummy.dir/cmake_clean.cmake
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm && $(CMAKE_COMMAND) -P CMakeFiles/glm_dummy.dir/cmake_clean.cmake
 .PHONY : libs/glm-master/glm/CMakeFiles/glm_dummy.dir/clean
 
 libs/glm-master/glm/CMakeFiles/glm_dummy.dir/depend:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vlad/Documents/Visual_Computing_h-da /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm/CMakeFiles/glm_dummy.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vlad/Desktop/Visual_Computing_h-da /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/glm-master/glm/CMakeFiles/glm_dummy.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : libs/glm-master/glm/CMakeFiles/glm_dummy.dir/depend
 

@@ -1,5 +1,5 @@
 CMakeFiles/OpenGL_Praktikum.dir/src/compute_normals.cpp.o: \
- /home/vlad/Documents/Visual_Computing_h-da/src/compute_normals.cpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/src/compute_normals.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

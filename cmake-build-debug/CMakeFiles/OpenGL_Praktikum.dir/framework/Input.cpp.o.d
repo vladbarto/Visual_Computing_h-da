@@ -1,5 +1,5 @@
 CMakeFiles/OpenGL_Praktikum.dir/framework/Input.cpp.o: \
- /home/vlad/Documents/Visual_Computing_h-da/framework/Input.cpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/framework/Input.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -136,13 +136,13 @@ CMakeFiles/OpenGL_Praktikum.dir/framework/Input.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
- /home/vlad/Documents/Visual_Computing_h-da/framework/Input.h \
- /home/vlad/Documents/Visual_Computing_h-da/framework/libheaders.h \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glew-2.1.0/include/GL/glew.h \
+ /home/vlad/Desktop/Visual_Computing_h-da/framework/Input.h \
+ /home/vlad/Desktop/Visual_Computing_h-da/framework/libheaders.h \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glew-2.1.0/include/GL/glew.h \
  /usr/include/GL/glu.h /usr/include/GL/gl.h \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/include/GLFW/glfw3.h \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/glm.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/_fixes.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/include/GLFW/glfw3.h \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/glm.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/_fixes.hpp \
  /usr/include/c++/9/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -153,10 +153,10 @@ CMakeFiles/OpenGL_Praktikum.dir/framework/Input.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/setup.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/setup.hpp \
  /usr/include/c++/9/cassert /usr/include/assert.h \
  /usr/include/c++/9/cstddef \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../simd/platform.h \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../simd/platform.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/emmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/mmintrin.h \
@@ -172,75 +172,75 @@ CMakeFiles/OpenGL_Praktikum.dir/framework/Input.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/c++/9/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/float.h \
  /usr/include/c++/9/limits \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/fwd.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/type_int.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/setup.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/type_float.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/type_vec.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/qualifier.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/compute_vector_relational.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/fwd.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/type_int.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/setup.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/type_float.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/type_vec.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/qualifier.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/compute_vector_relational.hpp \
  /usr/include/c++/9/cstring /usr/include/string.h /usr/include/strings.h \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/type_mat.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/vec2.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/type_vec2.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/type_vec2.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/vec3.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/type_vec3.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/type_vec3.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/vec4.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/type_vec4.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/type_vec4.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/type_vec4_simd.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/mat2x2.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/type_mat2x2.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/type_mat2x2.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../matrix.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/setup.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../mat2x3.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat2x3.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat2x3.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../mat2x4.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat2x4.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat2x4.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../mat3x2.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat3x2.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat3x2.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../mat3x3.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat3x3.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat3x3.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../mat3x4.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat3x4.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat3x4.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../mat4x2.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat4x2.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat4x2.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../mat4x3.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat4x3.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat4x3.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../mat4x4.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat4x4.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat4x4.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat4x4_simd.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/func_matrix.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../geometric.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/func_geometric.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../exponential.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/type_vec1.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/func_exponential.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/../vector_relational.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/../detail/setup.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/../detail/func_vector_relational.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/../detail/func_vector_relational_simd.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/_vectorize.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/type_vec1.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/func_exponential_simd.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/../simd/exponential.h \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../common.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/setup.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/_fixes.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/func_common.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/func_common_simd.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/../simd/common.h \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/type_mat.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/vec2.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/type_vec2.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/type_vec2.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/vec3.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/type_vec3.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/type_vec3.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/vec4.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/type_vec4.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/type_vec4.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/type_vec4_simd.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/mat2x2.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/type_mat2x2.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/type_mat2x2.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../matrix.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/setup.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../mat2x3.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat2x3.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat2x3.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../mat2x4.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat2x4.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat2x4.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../mat3x2.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat3x2.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat3x2.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../mat3x3.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat3x3.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat3x3.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../mat3x4.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat3x4.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat3x4.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../mat4x2.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat4x2.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat4x2.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../mat4x3.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat4x3.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat4x3.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../mat4x4.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat4x4.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat4x4.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/type_mat4x4_simd.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/func_matrix.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../geometric.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/func_geometric.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../exponential.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/type_vec1.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/func_exponential.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/../vector_relational.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/../detail/setup.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/../detail/func_vector_relational.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/../detail/func_vector_relational_simd.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/_vectorize.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/type_vec1.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/func_exponential_simd.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/../simd/exponential.h \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../common.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/setup.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/_fixes.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/func_common.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/func_common_simd.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../detail/../simd/common.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/immintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/pmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/tmmintrin.h \
@@ -300,46 +300,46 @@ CMakeFiles/OpenGL_Praktikum.dir/framework/Input.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/clflushoptintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/wbnoinvdintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/pkuintrin.h \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/func_geometric_simd.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../simd/geometric.h \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/func_matrix_simd.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../simd/matrix.h \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/trigonometric.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/func_trigonometric.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/func_trigonometric_simd.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/packing.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/func_packing.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/type_half.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/type_half.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/func_packing_simd.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/integer.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/func_integer.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../ext/vec1.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../ext/../detail/type_vec1.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/func_integer_simd.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/detail/../simd/integer.h \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtx/transform.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtx/../gtc/matrix_transform.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtx/../gtc/../gtc/constants.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtx/../gtc/../gtc/../detail/setup.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtx/../gtc/../gtc/constants.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtx/../gtc/matrix_transform.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtx/transform.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtc/quaternion.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtc/quaternion.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtc/epsilon.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtc/../detail/setup.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtc/epsilon.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtc/quaternion_simd.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtx/quaternion.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtx/../gtx/norm.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtx/../gtx/norm.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtx/quaternion.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtc/type_ptr.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtc/../gtc/vec1.hpp \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtc/../gtc/vec1.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/glm-master/glm/gtc/type_ptr.inl \
- /home/vlad/Documents/Visual_Computing_h-da/libs/stb/stb_image.h \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/func_geometric_simd.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../detail/../simd/geometric.h \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/func_matrix_simd.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../detail/../simd/matrix.h \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/trigonometric.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/func_trigonometric.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/func_trigonometric_simd.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/packing.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/func_packing.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/type_half.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/type_half.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/func_packing_simd.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/integer.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/func_integer.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../ext/vec1.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../ext/../detail/type_vec1.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/func_integer_simd.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/detail/../simd/integer.h \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtx/transform.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtx/../gtc/matrix_transform.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtx/../gtc/../gtc/constants.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtx/../gtc/../gtc/../detail/setup.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtx/../gtc/../gtc/constants.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtx/../gtc/matrix_transform.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtx/transform.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtc/quaternion.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtc/quaternion.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtc/epsilon.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtc/../detail/setup.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtc/epsilon.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtc/quaternion_simd.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtx/quaternion.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtx/../gtx/norm.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtx/../gtx/norm.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtx/quaternion.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtc/type_ptr.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtc/../gtc/vec1.hpp \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtc/../gtc/vec1.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master/glm/gtc/type_ptr.inl \
+ /home/vlad/Desktop/Visual_Computing_h-da/libs/stb/stb_image.h \
  /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_construct.h \
  /usr/include/c++/9/bits/stl_uninitialized.h \
  /usr/include/c++/9/bits/stl_vector.h \

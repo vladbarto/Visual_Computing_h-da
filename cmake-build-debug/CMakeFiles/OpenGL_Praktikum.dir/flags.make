@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DGLEW_STATIC
 
-CXX_INCLUDES = -I/home/vlad/Documents/Visual_Computing_h-da/src -I/home/vlad/Documents/Visual_Computing_h-da/src/Framework/Assets -I/home/vlad/Documents/Visual_Computing_h-da/src/Framework/Rendering -I/home/vlad/Documents/Visual_Computing_h-da/src/Framework/SceneElements -I/home/vlad/Documents/Visual_Computing_h-da/src/Game -I/home/vlad/Documents/Visual_Computing_h-da/framework -I/home/vlad/Documents/Visual_Computing_h-da/libs/glfw-3.2.1/include -I/home/vlad/Documents/Visual_Computing_h-da/libs/glew-2.1.0/include -I/home/vlad/Documents/Visual_Computing_h-da/libs/glew-2.1.0/include/GL -I/home/vlad/Documents/Visual_Computing_h-da/libs/glm-master -I/home/vlad/Documents/Visual_Computing_h-da/libs/stb
+CXX_INCLUDES = -I/home/vlad/Desktop/Visual_Computing_h-da/src -I/home/vlad/Desktop/Visual_Computing_h-da/src/Framework/Assets -I/home/vlad/Desktop/Visual_Computing_h-da/src/Framework/Rendering -I/home/vlad/Desktop/Visual_Computing_h-da/src/Framework/SceneElements -I/home/vlad/Desktop/Visual_Computing_h-da/src/Game -I/home/vlad/Desktop/Visual_Computing_h-da/framework -I/home/vlad/Desktop/Visual_Computing_h-da/libs/glfw-3.2.1/include -I/home/vlad/Desktop/Visual_Computing_h-da/libs/glew-2.1.0/include -I/home/vlad/Desktop/Visual_Computing_h-da/libs/glew-2.1.0/include/GL -I/home/vlad/Desktop/Visual_Computing_h-da/libs/glm-master -I/home/vlad/Desktop/Visual_Computing_h-da/libs/stb
 
 CXX_FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
 

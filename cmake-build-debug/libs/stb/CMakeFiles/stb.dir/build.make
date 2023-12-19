@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/259/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /snap/clion/260/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/259/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /snap/clion/260/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vlad/Documents/Visual_Computing_h-da
+CMAKE_SOURCE_DIR = /home/vlad/Desktop/Visual_Computing_h-da
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug
+CMAKE_BINARY_DIR = /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include libs/stb/CMakeFiles/stb.dir/depend.make
@@ -70,32 +70,32 @@ include libs/stb/CMakeFiles/stb.dir/progress.make
 include libs/stb/CMakeFiles/stb.dir/flags.make
 
 libs/stb/CMakeFiles/stb.dir/stb_image.c.o: libs/stb/CMakeFiles/stb.dir/flags.make
-libs/stb/CMakeFiles/stb.dir/stb_image.c.o: /home/vlad/Documents/Visual_Computing_h-da/libs/stb/stb_image.c
+libs/stb/CMakeFiles/stb.dir/stb_image.c.o: /home/vlad/Desktop/Visual_Computing_h-da/libs/stb/stb_image.c
 libs/stb/CMakeFiles/stb.dir/stb_image.c.o: libs/stb/CMakeFiles/stb.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/stb/CMakeFiles/stb.dir/stb_image.c.o"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/stb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/stb/CMakeFiles/stb.dir/stb_image.c.o -MF CMakeFiles/stb.dir/stb_image.c.o.d -o CMakeFiles/stb.dir/stb_image.c.o -c /home/vlad/Documents/Visual_Computing_h-da/libs/stb/stb_image.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/stb/CMakeFiles/stb.dir/stb_image.c.o"
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/stb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/stb/CMakeFiles/stb.dir/stb_image.c.o -MF CMakeFiles/stb.dir/stb_image.c.o.d -o CMakeFiles/stb.dir/stb_image.c.o -c /home/vlad/Desktop/Visual_Computing_h-da/libs/stb/stb_image.c
 
 libs/stb/CMakeFiles/stb.dir/stb_image.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stb.dir/stb_image.c.i"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/stb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vlad/Documents/Visual_Computing_h-da/libs/stb/stb_image.c > CMakeFiles/stb.dir/stb_image.c.i
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/stb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vlad/Desktop/Visual_Computing_h-da/libs/stb/stb_image.c > CMakeFiles/stb.dir/stb_image.c.i
 
 libs/stb/CMakeFiles/stb.dir/stb_image.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stb.dir/stb_image.c.s"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/stb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vlad/Documents/Visual_Computing_h-da/libs/stb/stb_image.c -o CMakeFiles/stb.dir/stb_image.c.s
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/stb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vlad/Desktop/Visual_Computing_h-da/libs/stb/stb_image.c -o CMakeFiles/stb.dir/stb_image.c.s
 
 libs/stb/CMakeFiles/stb.dir/stb_image_write.c.o: libs/stb/CMakeFiles/stb.dir/flags.make
-libs/stb/CMakeFiles/stb.dir/stb_image_write.c.o: /home/vlad/Documents/Visual_Computing_h-da/libs/stb/stb_image_write.c
+libs/stb/CMakeFiles/stb.dir/stb_image_write.c.o: /home/vlad/Desktop/Visual_Computing_h-da/libs/stb/stb_image_write.c
 libs/stb/CMakeFiles/stb.dir/stb_image_write.c.o: libs/stb/CMakeFiles/stb.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object libs/stb/CMakeFiles/stb.dir/stb_image_write.c.o"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/stb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/stb/CMakeFiles/stb.dir/stb_image_write.c.o -MF CMakeFiles/stb.dir/stb_image_write.c.o.d -o CMakeFiles/stb.dir/stb_image_write.c.o -c /home/vlad/Documents/Visual_Computing_h-da/libs/stb/stb_image_write.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object libs/stb/CMakeFiles/stb.dir/stb_image_write.c.o"
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/stb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/stb/CMakeFiles/stb.dir/stb_image_write.c.o -MF CMakeFiles/stb.dir/stb_image_write.c.o.d -o CMakeFiles/stb.dir/stb_image_write.c.o -c /home/vlad/Desktop/Visual_Computing_h-da/libs/stb/stb_image_write.c
 
 libs/stb/CMakeFiles/stb.dir/stb_image_write.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/stb.dir/stb_image_write.c.i"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/stb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vlad/Documents/Visual_Computing_h-da/libs/stb/stb_image_write.c > CMakeFiles/stb.dir/stb_image_write.c.i
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/stb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vlad/Desktop/Visual_Computing_h-da/libs/stb/stb_image_write.c > CMakeFiles/stb.dir/stb_image_write.c.i
 
 libs/stb/CMakeFiles/stb.dir/stb_image_write.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/stb.dir/stb_image_write.c.s"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/stb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vlad/Documents/Visual_Computing_h-da/libs/stb/stb_image_write.c -o CMakeFiles/stb.dir/stb_image_write.c.s
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/stb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vlad/Desktop/Visual_Computing_h-da/libs/stb/stb_image_write.c -o CMakeFiles/stb.dir/stb_image_write.c.s
 
 # Object files for target stb
 stb_OBJECTS = \
@@ -109,19 +109,19 @@ libs/stb/libstb.a: libs/stb/CMakeFiles/stb.dir/stb_image.c.o
 libs/stb/libstb.a: libs/stb/CMakeFiles/stb.dir/stb_image_write.c.o
 libs/stb/libstb.a: libs/stb/CMakeFiles/stb.dir/build.make
 libs/stb/libstb.a: libs/stb/CMakeFiles/stb.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libstb.a"
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/stb && $(CMAKE_COMMAND) -P CMakeFiles/stb.dir/cmake_clean_target.cmake
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/stb && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stb.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libstb.a"
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/stb && $(CMAKE_COMMAND) -P CMakeFiles/stb.dir/cmake_clean_target.cmake
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/stb && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stb.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 libs/stb/CMakeFiles/stb.dir/build: libs/stb/libstb.a
 .PHONY : libs/stb/CMakeFiles/stb.dir/build
 
 libs/stb/CMakeFiles/stb.dir/clean:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/stb && $(CMAKE_COMMAND) -P CMakeFiles/stb.dir/cmake_clean.cmake
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/stb && $(CMAKE_COMMAND) -P CMakeFiles/stb.dir/cmake_clean.cmake
 .PHONY : libs/stb/CMakeFiles/stb.dir/clean
 
 libs/stb/CMakeFiles/stb.dir/depend:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vlad/Documents/Visual_Computing_h-da /home/vlad/Documents/Visual_Computing_h-da/libs/stb /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/stb /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/stb/CMakeFiles/stb.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vlad/Desktop/Visual_Computing_h-da /home/vlad/Desktop/Visual_Computing_h-da/libs/stb /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/stb /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/stb/CMakeFiles/stb.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : libs/stb/CMakeFiles/stb.dir/depend
 

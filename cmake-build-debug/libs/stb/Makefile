@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/259/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /snap/clion/260/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/259/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /snap/clion/260/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vlad/Documents/Visual_Computing_h-da
+CMAKE_SOURCE_DIR = /home/vlad/Desktop/Visual_Computing_h-da
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug
+CMAKE_BINARY_DIR = /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	/snap/clion/259/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/260/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/snap/clion/259/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/260/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -97,49 +97,49 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/snap/clion/259/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+	/snap/clion/260/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/snap/clion/259/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+	/snap/clion/260/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/snap/clion/259/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/260/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/snap/clion/259/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/260/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/snap/clion/259/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/260/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/snap/clion/259/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/260/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/CMakeFiles /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/libs/stb//CMakeFiles/progress.marks
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/stb/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug/CMakeFiles 0
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/CMakeFiles /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/stb//CMakeFiles/progress.marks
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/stb/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/stb/clean
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/stb/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/stb/preinstall
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/stb/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/stb/preinstall
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/stb/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libs/stb/CMakeFiles/stb.dir/rule:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/stb/CMakeFiles/stb.dir/rule
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/stb/CMakeFiles/stb.dir/rule
 .PHONY : libs/stb/CMakeFiles/stb.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ stb: libs/stb/CMakeFiles/stb.dir/rule
 
 # fast build rule for target.
 stb/fast:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/stb/CMakeFiles/stb.dir/build.make libs/stb/CMakeFiles/stb.dir/build
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/stb/CMakeFiles/stb.dir/build.make libs/stb/CMakeFiles/stb.dir/build
 .PHONY : stb/fast
 
 stb_image.o: stb_image.c.o
@@ -180,7 +180,7 @@ stb_image.o: stb_image.c.o
 
 # target to build an object file
 stb_image.c.o:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/stb/CMakeFiles/stb.dir/build.make libs/stb/CMakeFiles/stb.dir/stb_image.c.o
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/stb/CMakeFiles/stb.dir/build.make libs/stb/CMakeFiles/stb.dir/stb_image.c.o
 .PHONY : stb_image.c.o
 
 stb_image.i: stb_image.c.i
@@ -188,7 +188,7 @@ stb_image.i: stb_image.c.i
 
 # target to preprocess a source file
 stb_image.c.i:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/stb/CMakeFiles/stb.dir/build.make libs/stb/CMakeFiles/stb.dir/stb_image.c.i
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/stb/CMakeFiles/stb.dir/build.make libs/stb/CMakeFiles/stb.dir/stb_image.c.i
 .PHONY : stb_image.c.i
 
 stb_image.s: stb_image.c.s
@@ -196,7 +196,7 @@ stb_image.s: stb_image.c.s
 
 # target to generate assembly for a file
 stb_image.c.s:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/stb/CMakeFiles/stb.dir/build.make libs/stb/CMakeFiles/stb.dir/stb_image.c.s
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/stb/CMakeFiles/stb.dir/build.make libs/stb/CMakeFiles/stb.dir/stb_image.c.s
 .PHONY : stb_image.c.s
 
 stb_image_write.o: stb_image_write.c.o
@@ -204,7 +204,7 @@ stb_image_write.o: stb_image_write.c.o
 
 # target to build an object file
 stb_image_write.c.o:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/stb/CMakeFiles/stb.dir/build.make libs/stb/CMakeFiles/stb.dir/stb_image_write.c.o
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/stb/CMakeFiles/stb.dir/build.make libs/stb/CMakeFiles/stb.dir/stb_image_write.c.o
 .PHONY : stb_image_write.c.o
 
 stb_image_write.i: stb_image_write.c.i
@@ -212,7 +212,7 @@ stb_image_write.i: stb_image_write.c.i
 
 # target to preprocess a source file
 stb_image_write.c.i:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/stb/CMakeFiles/stb.dir/build.make libs/stb/CMakeFiles/stb.dir/stb_image_write.c.i
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/stb/CMakeFiles/stb.dir/build.make libs/stb/CMakeFiles/stb.dir/stb_image_write.c.i
 .PHONY : stb_image_write.c.i
 
 stb_image_write.s: stb_image_write.c.s
@@ -220,7 +220,7 @@ stb_image_write.s: stb_image_write.c.s
 
 # target to generate assembly for a file
 stb_image_write.c.s:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/stb/CMakeFiles/stb.dir/build.make libs/stb/CMakeFiles/stb.dir/stb_image_write.c.s
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs/stb/CMakeFiles/stb.dir/build.make libs/stb/CMakeFiles/stb.dir/stb_image_write.c.s
 .PHONY : stb_image_write.c.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vlad/Documents/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

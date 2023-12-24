@@ -78,11 +78,15 @@ Img can be interpreted as a matrix of pixels:
 - first argument refers to height, so y
 - second argument refers to width, so x
 
-Every time you access an image pixel at certain `[y][x]`, you will find in there a **color tuple** in BGR format.
+Every time you access an image pixel at certain `[y][x]`, you will find in there a **color array** in BGR format.
 ```python
-blue = (255, 0, 0)  # color blue, format BGR
+blue = [255, 0, 0]  # color blue, format BGR
 img[315][220] = blue
 ```
+```python
+img[315, 220] = blue  # it's the same thing, but more often used
+```
+> More details here: https://docs.opencv.org/4.x/d3/df2/tutorial_py_basic_ops.html
 
 ### 7. Save an image on hard disk (die Festplatte)
 For that we have the `imwrite` function with the following arguments:
@@ -94,3 +98,103 @@ For more, look this up, under `ImWriteFlags`:
 
 and this:
 > https://docs.opencv.org/4.x/d8/d6a/group__imgcodecs__flags.html
+
+### 8. Changing Color-Space
+For color conversion, we use the function `cv.cvtColor(input_image, flag)` where `flag` determines the type of conversion.
+- Conversion BGR->HSV: `cv2.COLOR_BGR2HSV`
+
+```python
+    # Convert BGR to HSV
+    hsv = cv2.cvtColor(src_image, cv.COLOR_BGR2HSV)
+```
+Once I have my image in HSV Color Space, I can extract all channels separately:
+```python
+h = hsv[:, :, 0]
+s = hsv[:, :, 1]
+v = hsv[:, :, 2]
+```
+In this code, `h` is an array with all pixels from the image containing only the `H Color Channel`. The same goes for `s` and `v`
+
+Going further, we declare a constant and add it to the extracted `h` channel using `cv2.add(dest, src)` method:
+```python
+# Shift the hue
+hueChange = 85
+hnew = cv2.add(h, hueChange)
+
+# Combine new hue with s and v
+hsvnew = cv2.merge([hnew, s, v])
+```
+With `cv2.merge` we create a new image in HSV Color space with the modified channels.
+> More details here: https://stackoverflow.com/questions/67448555/python-opencv-how-to-change-hue-in-hsv-channels
+
+### 9. Schieberegler (Slider) as the Color Palette
+> Excelent Doku here: https://docs.opencv.org/3.1.0/d9/dc8/tutorial_py_trackbar.html#gsc.tab=0
+
+Used functions: `cv2.createTrackbar` and `cv2.getTrackbarPos`.
+Start from an existing image:
+```python
+yoshi = cv2.imread('./figures/yoshi.png')
+```
+Then you have to create a window for reference:
+```python
+# Create a window
+cv2.namedWindow('yoshi')
+```
+`createTrackbar` takes exactly 5 arguments:
+- `name of the slider`: H
+- `name of the window`: yoshi
+- `min value`: 0
+- `max value`: 180
+- `callback function`: nothing, which in our case will be a function that has to take one argument and do nothing.
+```python
+def nothing(Wert):
+    pass
+
+# Create a trackbar for color change
+cv2.createTrackbar('H', 'yoshi', 0, 180, nothing)
+```
+In an infinite loop, display the window and wait for a key to stop the program.
+> Note: `cv2.destroyAllWindows()` must be called after the while loop.
+
+Inside while loop, get current Trackbar position and store it in a variable, with `cv2.getTrackbarPos`, then modify your image:
+```python
+def mask_change_color(mask, img, hueWert: int):
+    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+
+    höhe = hsv.shape[0]
+    breite = hsv.shape[1]
+    weiß = [255, 255, 255]
+
+    h = hsv[:, :, 0]
+    s = hsv[:, :, 1]
+    v = hsv[:, :, 2]
+
+    # Shift the hue
+    hueChange = hueWert
+    for y in range(höhe):
+        for x in range(breite):
+            if np.array_equal(mask[y, x], weiß):
+                h[y, x] += hueChange
+
+    # Combine new hue with s and v
+    hsvnew = cv2.merge([h, s, v])
+
+    # Update the original image with the modified hue values
+    img[:,:,:] = cv2.cvtColor(hsvnew, cv2.COLOR_HSV2BGR)
+
+
+while True:
+    cv2.imshow('yoshi', yoshi)
+
+    k = cv2.waitKey(1) & 0xFF
+    if k == 27:  # 'Esc' key
+        break
+
+    # Get current position of the trackbar
+    h = cv2.getTrackbarPos('H', 'yoshi')
+
+    # Update the image with the modified hue values
+    mask_change_color(mask, yoshi, h)
+
+cv2.destroyAllWindows()
+```

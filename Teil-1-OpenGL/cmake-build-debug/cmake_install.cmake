@@ -1,4 +1,4 @@
-# Install script for directory: /home/vlad/Desktop/Visual_Computing_h-da
+# Install script for directory: /home/vlad/Documents/FACULTA/AN3/SEM1/VC/Visual_Computing_h-da/Teil-1-OpenGL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/libs/cmake_install.cmake")
+  include("/home/vlad/Documents/FACULTA/AN3/SEM1/VC/Visual_Computing_h-da/Teil-1-OpenGL/cmake-build-debug/libs/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/vlad/Desktop/Visual_Computing_h-da/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/vlad/Documents/FACULTA/AN3/SEM1/VC/Visual_Computing_h-da/Teil-1-OpenGL/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

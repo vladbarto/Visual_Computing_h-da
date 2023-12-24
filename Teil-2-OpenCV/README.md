@@ -3,6 +3,7 @@
 
 ### Prerequisites:
 `import cv2`
+`import numpy as np`
 ### 1. Loading an image  
 It's done with the method `imread` of `cv2`. A call would look like:
 ```python
@@ -105,7 +106,7 @@ For color conversion, we use the function `cv.cvtColor(input_image, flag)` where
 
 ```python
     # Convert BGR to HSV
-    hsv = cv2.cvtColor(src_image, cv.COLOR_BGR2HSV)
+    hsv = cv2.cvtColor(src_image, cv2.COLOR_BGR2HSV)
 ```
 Once I have my image in HSV Color Space, I can extract all channels separately:
 ```python

@@ -1,4 +1,4 @@
-# Install script for directory: /home/vlad/Desktop/Visual_Computing_h-da/libs/stb
+# Install script for directory: /home/vlad/Documents/FACULTA/AN3/SEM1/VC/Visual_Computing_h-da/Teil-1-OpenGL/libs/stb
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

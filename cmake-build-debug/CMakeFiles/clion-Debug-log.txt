@@ -1,0 +1,1 @@
+CMakeLists.txt not found in /home/vlad/Documents/FACULTA/AN3/SEM1/VC/Visual_Computing_h-da Select CMakeLists.txt
